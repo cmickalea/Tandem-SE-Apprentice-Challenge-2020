@@ -110,7 +110,7 @@ const Game = () => {
                     <div className="radio">
                         <form onSubmit={clickSubmit}>
                             {data[round].incorrect.map((answer, i) => (
-                                <div><label><input  type="radio" name="option" key={i} value={answer} onChange={event => setSelected(event.target.value)}/>{answer}</label></div>
+                                <div><label><input  type="radio" name="option" key={i} value={answer} onChange={event => setSelected(event.target.value)} required/>{answer}</label></div>
                             ))}
 
                             <div className="radio">
@@ -120,7 +120,7 @@ const Game = () => {
                                 </label>
                             </div>
                             <div className="submit">
-                                <input type="submit" value="submit"/>
+                                <input type="submit" value="Next Question"/>
                             </div>
                         </form>
                         <div className="answer" style={{display: display}}>

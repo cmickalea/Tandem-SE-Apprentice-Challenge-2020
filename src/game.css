@@ -45,6 +45,7 @@ code {
    margin-right: auto;
    width: 60%;
    border: 5px solid #282C34;
+   border-radius: 20px;
    padding: 20px;
    background-color: #EBEBEB;
    /*background-color: #B1C2E6;*/
@@ -57,10 +58,11 @@ code {
 
 
 input[type="submit"] {
-   font-size: 16px;
+   font-size: 18px;
    border: 1px solid #282c34;
    border-radius: 5px;
    margin-bottom: 2%;
+   padding: 5px 15px;
    background-color: #282c34;
    color: #fff;
 }
