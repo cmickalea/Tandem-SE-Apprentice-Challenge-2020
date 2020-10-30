@@ -1,0 +1,79 @@
+/*html {*/
+/*   background-color: #B1C2E6;*/
+/*}*/
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+   monospace;
+}
+
+.heading {
+   color: #961715;
+   text-align: center;
+   font-size: 55px;
+   font-weight: bold;
+}
+
+
+
+.tips {
+   display: block;
+   margin-top: 2%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+   /*border: 5px solid #333;*/
+   padding: 20px;
+   background-color: #EBEBEB;
+   color: #B07E0B;
+   text-align: left;
+   font-size: 14px;
+}
+
+.card-container {
+   display: block;
+   margin-top: 2.5%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+   border: 5px solid #282C34;
+   padding: 20px;
+   background-color: #EBEBEB;
+   /*background-color: #B1C2E6;*/
+   color: #282C34;
+}
+
+.radio {
+   margin-bottom: 2%;
+}
+
+
+input[type="submit"] {
+   font-size: 16px;
+   border: 1px solid #282c34;
+   border-radius: 5px;
+   margin-bottom: 2%;
+   background-color: #282c34;
+   color: #fff;
+}
+
+.game-over {
+   display: block;
+   margin-top: 5%;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+   border: 5px solid #282C34;
+   padding: 20px;
+   background-color: #B1C2E6;
+   color: #282C34;
+   text-align: center;
+}
