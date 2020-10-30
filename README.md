@@ -5,7 +5,7 @@ The challenge was to create a trivia game where users could view questions and s
 ## How to Run Code
 This project was bootstrapped with create-react-app.
 ```npm start```
-Runs app in dev mode to be viewed at [http://localhost:3000](http://localhost:3000)
+runs the app in dev mode to be viewed at [http://localhost:3000](http://localhost:3000)
 
 ## Acceptance Criteria
 - Questions and their corresponding answer choices can be viewed at one time.
