@@ -10,7 +10,7 @@ The challenge was to create a trivia game where users could view questions and s
 - A user can see the score they received at the end of the round.
 
 ## Known Issues
-In order to create a round of 10 I generated a random array to shuffle the questions which presented a problem with duplicate questions. None of the solutions I tried created a game with uniques questions but I decided to risk duplicates rather than create a game where every round has the same questions in the same order.
+In order to create a round of 10 questions I generated a random array to shuffle the questions which presented a problem with duplicate questions. None of the solutions I tried guaranteed a game free of duplicates but I decided to risk duplicates rather than create a game where every round has the same questions in the same order. Also, I tried multiple different ways to deselect the previous choice selected but could not solve that issue as well.
 
 ## Future Improvements
-I would definitely work to solve my duplicates issue. Additionally, I would add a timing feature where the incorrect answers disappear as time goes down leaving the correct answer as time is up.  
+I would definitely work to solve my aforementioned issues. Additionally, I would add a timing feature where the incorrect answers disappear as time goes down leaving the correct answer as time is up.
