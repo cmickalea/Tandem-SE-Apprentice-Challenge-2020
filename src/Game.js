@@ -15,6 +15,7 @@ const Game = () => {
 
     let answer = data[round].correct;
 
+    // create an array of unique numbers to randomly select 10 questions for the game
     const generate = () => {
         let nums = [];
         let newArray = [];
@@ -33,16 +34,21 @@ const Game = () => {
         setNumArray([...numbers]);
     }, []);
 
-    const countQuestions = () => {
-        const questionCount = count + 1;
-        setCount(questionCount);
-    }
-
+    // create variable that selects the next number in numArray
     const iterateOverArray = () => {
         const newPosition = position + 1;
         setPosition(newPosition);
     }
 
+    // identify the number of the question in the round
+    const countQuestions = () => {
+        const questionCount = count + 1;
+        setCount(questionCount);
+    }
+
+    // hides answer to previous question
+    // updates the question number
+    // displays the next question
     const changeQuestion = () => {
         setDisplay("none");
         countQuestions();
@@ -50,34 +56,45 @@ const Game = () => {
         setRound(next);
     }
 
-    const playGame = () => {
-        const playTheGame = "none";
-        setGameOver(playTheGame);
+    // hides the div that shows questions / answers
+    const endGame = () => {
+        const endTheGame = "none";
+        setGameOver(endTheGame);
     }
 
+    // updates user's score
     const displayScore = () => {
         const userScores = score + 1;
         setScore(userScores);
     }
 
+    // changes display styling of game over div from none to block
+    const gameOverDisplay = () => {
+        const gameOverDivDisplay = "block";
+        setGameDisplay(gameOverDivDisplay);
+    }
+
+    // displays game over div with new block display styling
+    const showGameOver = () => {
+        gameOverDisplay();
+    }
+
+    // changes display styling of answer from none to block
     const changeDisplay = () => {
         const blockDisplay = "block";
         setDisplay(blockDisplay);
     }
 
-    const gameOverDisplay = () => {
-        const endGame = "block";
-        setGameDisplay(endGame);
-    }
-
-    const showGameOver = () => {
-        gameOverDisplay();
-    }
-
+    //displays answer
     const showAnswer = () => {
         changeDisplay();
     }
 
+    // updates number to be selected from array
+    // adds a point to the user's score if selected answer matches correct answer
+    // displays the correct answer
+    // goes to next question unless the round is over (after 10 questions) in which case...
+    // the game is ended and game-over div is displayed
     const clickSubmit = (event) => {
         event.preventDefault();
         console.log(selected);
@@ -91,7 +108,7 @@ const Game = () => {
         showAnswer();
         if(count === 9){
             console.log("game over");
-            playGame();
+            endGame();
             showGameOver();
             return;
         }
